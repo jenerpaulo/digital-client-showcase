@@ -119,10 +119,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Análise Digital
+              Performance Digital
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Relatório de Performance e Estratégia Digital
+              Análise de Performance & Proposta de Escalada Digital
             </p>
           </div>
           
@@ -143,16 +143,16 @@ const Index = () => {
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Informações da Empresa</h3>
                   <div className="space-y-2 text-gray-600 dark:text-gray-300">
                     <p><strong>Segmento:</strong> Artigos Religiosos Católicos</p>
-                    <p><strong>Modelo:</strong> Franquia + E-commerce</p>
-                    <p><strong>Presença:</strong> Matriz e Filiais</p>
+                    <p><strong>Modelo:</strong> Franquia Físca + E-commerce</p>
+                    <p><strong>Abrangência:</strong> Brasil</p>
                   </div>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Presença Digital</h3>
                   <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                    <p><strong>Site Franquia:</strong> divinoamor.com</p>
-                    <p><strong>Site E-commerce:</strong> divinoamor.com.br</p>
-                    <p><strong>Status:</strong> Múltiplas unidades</p>
+                    <p><strong>Site Franquia:</strong> espacocatolicodivinoamor.com</p>
+                    <p><strong>Site E-commerce:</strong> espacocatolicodivinoamor.com.br</p>
+                    <p><strong>Redes Sociais:</strong> Sim</p>
                   </div>
                 </div>
               </div>
@@ -168,14 +168,14 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Desempenho no Google
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Análise atual da presença digital</p>
+            <p className="text-lg text-gray-600 dark:text-gray-300">Análise de Relevância</p>
           </div>
 
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 dark:text-white">
                 <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                Visão Geral do Site
+                Métricas Importantes
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -183,11 +183,11 @@ const Index = () => {
                 <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                   <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">10</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Pontuação de Autoridade</div>
-                  <div className="text-xs text-red-500 dark:text-red-400 mt-1">/100 máximo</div>
+                  <div className="text-xs text-red-500 dark:text-red-400 mt-1">10/100 máximo</div>
                 </div>
                 
                 <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
-                  <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">1.900</div>
+                  <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">3000</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Tráfego Orgânico/Mês</div>
                   <div className="text-xs text-orange-500 dark:text-orange-400 mt-1">Estimado</div>
                 </div>
@@ -195,13 +195,13 @@ const Index = () => {
                 <div className="text-center p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                   <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">4</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Recomendações</div>
-                  <div className="text-xs text-yellow-500 dark:text-yellow-400 mt-1">Outros sites</div>
+                  <div className="text-xs text-yellow-500 dark:text-yellow-400 mt-1">De outros sites</div>
                 </div>
                 
                 <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                   <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2">Divino Amor</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Palavra-chave Principal</div>
-                  <Badge variant="outline" className="text-xs mt-1 dark:border-gray-600">Informativa</Badge>
+                  <Badge variant="outline" className="text-xs mt-1 dark:border-gray-600">Intenção: Informacional</Badge>
                 </div>
               </div>
               
@@ -210,7 +210,7 @@ const Index = () => {
                   <AlertTriangle className="w-5 h-5" />
                   <strong>Avaliação:</strong>
                 </div>
-                <p className="text-red-600 dark:text-red-400 mt-2">O site não tem relevância no Google.</p>
+                <p className="text-red-600 dark:text-red-400 mt-2">O site da Divino Amor ainda não tem relevância no Google.</p>
               </div>
             </CardContent>
           </Card>
@@ -224,13 +224,13 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Análise Técnica
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Diagnóstico detalhado dos problemas técnicos</p>
+            <p className="text-lg text-gray-600 dark:text-gray-300">Diagnóstico dos problemas técnicos</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="shadow-xl dark:bg-slate-800 dark:border-slate-700">
               <CardHeader>
-                <CardTitle className="text-red-600 dark:text-red-400">Problemas Críticos Identificados</CardTitle>
+                <CardTitle className="text-red-600 dark:text-red-400">Problemas Identificados</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-between p-3 bg-red-50 dark:bg-red-900/20 rounded-lg">
@@ -305,63 +305,6 @@ const Index = () => {
             <p className="text-lg text-gray-600 dark:text-gray-300">Insights estratégicos e oportunidades</p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 dark:text-white">
-                  <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  Análise Necessária
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 text-gray-600 dark:text-gray-300">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Resolver erro 403 do servidor
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Avaliar perfis Google da matriz
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Analisar performance das filiais
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Estratégia de tráfego local
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-xl lg:col-span-2 dark:bg-slate-700 dark:border-slate-600">
-              <CardHeader>
-                <CardTitle className="dark:text-white">Palavras-chave de Oportunidade</CardTitle>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Volume mensal de buscas | Apenas algumas entre centenas disponíveis
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  {keywordData.map((item, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
-                      <span className="text-gray-700 dark:text-gray-200">{item.keyword}</span>
-                      <Badge variant="outline" className="dark:border-gray-500">{item.volume}k/mês</Badge>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                  <p className="text-blue-700 dark:text-blue-400 text-sm">
-                    <strong>Observação:</strong> O tráfego ainda não é dominado pela Divino Amor. 
-                    Grande potencial de crescimento identificado.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
             <CardHeader>
               <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
@@ -389,6 +332,63 @@ const Index = () => {
               </div>
             </CardContent>
           </Card>
+
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 dark:text-white">
+                  <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  Análise Pendente
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                    Resolver erro 403 do servidor
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                    Avaliar perfil Google da matriz
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                    Analisar performance das filiais
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                    Análise de redes sociais
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-xl lg:col-span-2 dark:bg-slate-700 dark:border-slate-600">
+              <CardHeader>
+                <CardTitle className="dark:text-white">Palavras-chave de Oportunidade</CardTitle>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Volume mensal de buscas relevantes | Apenas algumas entre centenas disponíveis
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  {keywordData.map((item, index) => (
+                    <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
+                      <span className="text-gray-700 dark:text-gray-200">{item.keyword}</span>
+                      <Badge variant="outline" className="dark:border-gray-500">{item.volume}mil buscas/mês</Badge>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <p className="text-blue-700 dark:text-blue-400 text-sm">
+                    <strong>Observação:</strong> O tráfego ainda não é dominado pela Divino Amor. 
+                    Grande potencial de crescimento identificado.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
