@@ -308,31 +308,7 @@ const Index = () => {
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
             <CardHeader>
               <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li>• Domínios distintos (.com / .com.br) causam confusão</li>
-                    <li>• Site da Franquia usa blocos de imagem sem otimização</li>
-                    <li>• Impacto negativo na indexação do Google</li>
-                    <li>• Problemas de usabilidade mobile</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Melhorias Necessárias</h4>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li>• Site da Loja precisa de otimização para Google</li>
-                    <li>• Páginas de produtos não otimizadas</li>
-                    <li>• Unidades filiais sem destaque</li>
-                    <li>• Estratégia de conteúdo estruturado</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
+            </CardHeader>   
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
               <CardHeader>
@@ -378,7 +354,7 @@ const Index = () => {
                       <Badge variant="outline" className="dark:border-gray-500">{item.volume}mil buscas/mês</Badge>
                     </div>
                   ))}
-                </div>
+                </div>            
                 
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                   <p className="text-blue-700 dark:text-blue-400 text-sm">
@@ -388,6 +364,31 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+ <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                    <li>• Domínios distintos (.com / .com.br) causam confusão</li>
+                    <li>• Site da Franquia não está apto a ranquear no Google</li>
+                    <li>• Site da loja não está apto a competir com outras lojas pelo topo do Google</li>
+                    <li>• Problemas de usabilidade mobile</li>
+                    <li>• Unidades filiais não tem relevância</li>
+                    <li>• Os sites não usufruem do grande volume de buscas por termos relevantes</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Resumo Inicial</h4>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+                    <li>É necessário um levantamento mais detalhado, que deve partir do interesse da Divino Amor. 
+                      Porém, este diagnóstico inicial já revela limitações técnicas no site — desde ajustes simples nas páginas 
+                      até possíveis melhorias mais complexas e expansão da estrutura para alcançar melhores resultados. </li>                
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+            
           </div>
         </div>
       </section>
