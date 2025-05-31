@@ -351,7 +351,7 @@ const Index = () => {
                   {keywordData.map((item, index) => (
                     <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
                       <span className="text-gray-700 dark:text-gray-200">{item.keyword}</span>
-                      <Badge variant="outline" className="dark:border-gray-500">{item.volume}mil buscas/mês</Badge>
+                      <Badge variant="outline" className="dark:border-gray-500">{item.volume} mil buscas/mês</Badge>
                     </div>
                   ))}
                 </div>            
