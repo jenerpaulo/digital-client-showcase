@@ -530,7 +530,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-6 bg-white text-blue-600 hover:bg-gray-100" onClick={() => window.open('#', '_blank')}>
+              <Button className="w-full mt-6 bg-white text-blue-600 hover:bg-gray-100" onClick={() => window.open('https://duobro.com.br/', '_blank')}>
                 Conheça a Duobro Tech
                 <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
