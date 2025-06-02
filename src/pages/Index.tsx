@@ -5,11 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Menu, X } from 'lucide-react';
 import { ThemeToggle } from "@/components/theme-toggle";
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'google-performance', 'analise-tecnica', 'analise-humana', 'proposta', 'agencia'];
@@ -25,65 +23,68 @@ const Index = () => {
         setActiveSection(currentSection);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
     setIsMobileMenuOpen(false); // Close mobile menu after navigation
   };
-
-  const menuItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'google-performance', label: 'Google Performance' },
-    { id: 'analise-tecnica', label: 'Análise Técnica' },
-    { id: 'analise-humana', label: 'Análise Humana' },
-    { id: 'proposta', label: 'Proposta' },
-    { id: 'agencia', label: 'Agência' }
-  ];
-
-  const keywordData = [
-    { keyword: 'imagem da sagrada família', volume: 33.1 },
-    { keyword: 'imagem de são josé', volume: 18.1 },
-    { keyword: 'imagem do sagrado coração de jesus', volume: 12.1 },
-    { keyword: 'loja católica', volume: 5.4 },
-    { keyword: 'loja de artigos religiosos católicos', volume: 2.4 }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
+  const menuItems = [{
+    id: 'home',
+    label: 'Home'
+  }, {
+    id: 'google-performance',
+    label: 'Google Performance'
+  }, {
+    id: 'analise-tecnica',
+    label: 'Análise Técnica'
+  }, {
+    id: 'analise-humana',
+    label: 'Análise Humana'
+  }, {
+    id: 'proposta',
+    label: 'Proposta'
+  }, {
+    id: 'agencia',
+    label: 'Agência'
+  }];
+  const keywordData = [{
+    keyword: 'imagem da sagrada família',
+    volume: 33.1
+  }, {
+    keyword: 'imagem de são josé',
+    volume: 18.1
+  }, {
+    keyword: 'imagem do sagrado coração de jesus',
+    volume: 12.1
+  }, {
+    keyword: 'loja católica',
+    volume: 5.4
+  }, {
+    keyword: 'loja de artigos religiosos católicos',
+    volume: 2.4
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {menuItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    activeSection === item.id
-                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
-                  }`}
-                >
+              {menuItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${activeSection === item.id ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400' : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
                   {item.label}
-                </button>
-              ))}
+                </button>)}
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none"
-              >
+              <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none">
                 {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
@@ -92,25 +93,13 @@ const Index = () => {
           </div>
 
           {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden pb-4">
+          {isMobileMenuOpen && <div className="md:hidden pb-4">
               <div className="flex flex-col space-y-2">
-                {menuItems.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className={`px-3 py-2 text-left text-sm font-medium transition-colors duration-200 rounded-md ${
-                      activeSection === item.id
-                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-slate-800'
-                    }`}
-                  >
+                {menuItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className={`px-3 py-2 text-left text-sm font-medium transition-colors duration-200 rounded-md ${activeSection === item.id ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-slate-800'}`}>
                     {item.label}
-                  </button>
-                ))}
+                  </button>)}
               </div>
-            </div>
-          )}
+            </div>}
         </div>
       </nav>
 
@@ -127,13 +116,9 @@ const Index = () => {
           </div>
           
           <Card className="max-w-4xl mx-auto shadow-xl dark:bg-slate-800 dark:border-slate-700">
-            <CardHeader className="text-center bg-gradient-to-r from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20">
+            <CardHeader className="text-center bg-gradient-to-r from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20 bg-gray-950">
               <div className="flex justify-center mb-4">
-                <img 
-                  src="/lovable-uploads/78dd96d5-e633-48ab-8b67-07ac48d3fd74.png" 
-                  alt="Divino Amor Logo" 
-                  className="h-24 w-auto"
-                />
+                <img src="/lovable-uploads/78dd96d5-e633-48ab-8b67-07ac48d3fd74.png" alt="Divino Amor Logo" className="h-24 w-auto" />
               </div>
               <CardTitle className="text-2xl text-amber-800 dark:text-amber-200">Espaço Católico Divino Amor</CardTitle>
             </CardHeader>
@@ -180,32 +165,32 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-gray-900">
                   <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">10</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Pontuação de Autoridade</div>
                   <div className="text-xs text-red-500 dark:text-red-400 mt-1">10/100 máximo</div>
                 </div>
                 
-                <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-slate-800">
                   <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">3000</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Tráfego Orgânico/Mês</div>
                   <div className="text-xs text-orange-500 dark:text-orange-400 mt-1">Estimado</div>
                 </div>
                 
-                <div className="text-center p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-slate-900">
                   <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">4</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Recomendações</div>
                   <div className="text-xs text-yellow-500 dark:text-yellow-400 mt-1">De outros sites</div>
                 </div>
                 
-                <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-slate-800">
                   <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2">Divino Amor</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Palavra-chave Principal</div>
                   <Badge variant="outline" className="text-xs mt-1 dark:border-gray-600">Intenção: Informacional</Badge>
                 </div>
               </div>
               
-              <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+              <div className="border border-red-200 dark:border-red-800 rounded-lg p-4 bg-red-950">
                 <div className="flex items-center gap-2 text-red-700 dark:text-red-400">
                   <AlertTriangle className="w-5 h-5" />
                   <strong>Avaliação:</strong>
@@ -306,8 +291,8 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
-              <CardHeader>
+            <Card className="shadow-xl dark:border-slate-600 bg-slate-900">
+              <CardHeader className="bg-slate-900">
                 <CardTitle className="flex items-center gap-2 dark:text-white">
                   <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   Análise Pendente
@@ -335,8 +320,8 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl lg:col-span-2 dark:bg-slate-700 dark:border-slate-600">
-              <CardHeader>
+            <Card className="shadow-xl lg:col-span-2 dark:border-slate-600 bg-slate-900">
+              <CardHeader className="bg-slate-900">
                 <CardTitle className="dark:text-white">Palavras-chave de Oportunidade</CardTitle>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Volume mensal de buscas relevantes | Apenas algumas entre centenas disponíveis
@@ -344,12 +329,10 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  {keywordData.map((item, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
+                  {keywordData.map((item, index) => <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
                       <span className="text-gray-700 dark:text-gray-200">{item.keyword}</span>
                       <Badge variant="outline" className="dark:border-gray-500">{item.volume} mil buscas/mês</Badge>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>            
                 
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -363,10 +346,10 @@ const Index = () => {
           </div>
 
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
-            <CardHeader>
+            <CardHeader className="bg-gray-800">
               <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="bg-slate-800">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
@@ -394,7 +377,7 @@ const Index = () => {
       </section>
 
       {/* Proposal Section */}
-      <section id="proposta" className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 px-4 sm:px-6 lg:px-8">
+      <section id="proposta" className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -404,7 +387,7 @@ const Index = () => {
           </div>
 
           <Card className="shadow-xl mb-8 dark:bg-slate-800 dark:border-slate-700">
-            <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+            <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white bg-zinc-100">
               <CardTitle>Análise e Objetivos</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
@@ -483,11 +466,7 @@ const Index = () => {
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold mb-4">Chamada de Ação</h3>
               <p className="text-lg mb-6">Agende sua reunião até 03 de Junho</p>
-              <Button 
-                size="lg" 
-                className="bg-white text-orange-600 hover:bg-gray-100"
-                onClick={() => window.open('#', '_blank')}
-              >
+              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100" onClick={() => window.open('#', '_blank')}>
                 Escolha uma data aqui
                 <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
@@ -501,11 +480,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <img 
-                src="/lovable-uploads/8f98c4bb-4e64-4273-84a4-100ec48a1b18.png" 
-                alt="Duobro Tech Logo" 
-                className="h-16 w-auto"
-              />
+              <img src="/lovable-uploads/8f98c4bb-4e64-4273-84a4-100ec48a1b18.png" alt="Duobro Tech Logo" className="h-16 w-auto" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Sobre a Agência</h2>
             <p className="text-lg text-gray-300">Especialistas em crescimento digital sustentável</p>
@@ -555,10 +530,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button 
-                className="w-full mt-6 bg-white text-blue-600 hover:bg-gray-100"
-                onClick={() => window.open('#', '_blank')}
-              >
+              <Button className="w-full mt-6 bg-white text-blue-600 hover:bg-gray-100" onClick={() => window.open('#', '_blank')}>
                 Conheça a Duobro Tech
                 <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
@@ -566,8 +538,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
