@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Menu, X } from 'lucide-react';
 import { ThemeToggle } from "@/components/theme-toggle";
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -55,16 +54,23 @@ const Index = () => {
     id: 'agencia',
     label: 'Agência'
   }];
-  const keywordData = [
-    { keyword: 'imagem da sagrada família', volume: 33.1 },
-    { keyword: 'imagem de são josé', volume: 18.1 },
-    { keyword: 'imagem do sagrado coração de jesus', volume: 12.1 },
-    { keyword: 'loja católica', volume: 5.4 },
-    { keyword: 'loja de artigos religiosos católicos', volume: 2.4 }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
+  const keywordData = [{
+    keyword: 'imagem da sagrada família',
+    volume: 33.1
+  }, {
+    keyword: 'imagem de são josé',
+    volume: 18.1
+  }, {
+    keyword: 'imagem do sagrado coração de jesus',
+    volume: 12.1
+  }, {
+    keyword: 'loja católica',
+    volume: 5.4
+  }, {
+    keyword: 'loja de artigos religiosos católicos',
+    volume: 2.4
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -323,12 +329,10 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  {keywordData.map((item, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
+                  {keywordData.map((item, index) => <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
                       <span className="text-gray-700 dark:text-gray-200">{item.keyword}</span>
                       <Badge variant="outline" className="dark:border-gray-500">{item.volume} mil buscas/mês</Badge>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>            
                 
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -396,20 +400,20 @@ const Index = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center p-4 rounded-lg bg-sky-600">
                   <Target className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Objetivo 1</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Levar a Divino Amor ao topo do Google em múltiplos termos</p>
+                  <h4 className="font-semibold mb-2 text-slate-50">Objetivo 1</h4>
+                  <p className="text-sm text-slate-50">Levar a Divino Amor ao topo do Google em múltiplos termos</p>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-teal-500">
                   <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Objetivo 2</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Melhorar fundamentos técnicos e experiência do usuário</p>
+                  <h4 className="font-semibold mb-2 text-slate-50">Objetivo 2</h4>
+                  <p className="text-sm text-slate-50">Melhorar fundamentos técnicos e experiência do usuário</p>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-violet-900">
                   <TrendingUp className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Objetivo 3</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">Projetar novas estruturas estratégicas de posicionamento</p>
+                  <h4 className="font-semibold mb-2 text-slate-50">Objetivo 3</h4>
+                  <p className="text-sm text-slate-50">Projetar novas estruturas estratégicas de posicionamento</p>
                 </div>
               </div>
             </CardContent>
@@ -461,7 +465,7 @@ const Index = () => {
           <Card className="shadow-xl bg-gradient-to-r from-orange-500 to-red-500 text-white">
             <CardContent className="p-8 text-center bg-yellow-400">
               <h3 className="text-2xl font-bold mb-4">Sinalize seu Interesse</h3>
-              <p className="text-lg mb-6">Agende sua reunião até 06 de Junho</p>
+              <p className="text-lg mb-6 text-slate-700">Agende sua reunião até 06 de Junho</p>
               <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100" onClick={() => window.open('#', '_blank')}>
                 Escolha uma data aqui
                 <ExternalLink className="w-4 h-4 ml-2" />
@@ -534,8 +538,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
