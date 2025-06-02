@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Menu, X } from 'lucide-react';
 import { ThemeToggle } from "@/components/theme-toggle";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -54,23 +55,16 @@ const Index = () => {
     id: 'agencia',
     label: 'Agência'
   }];
-  const keywordData = [{
-    keyword: 'imagem da sagrada família',
-    volume: 33.1
-  }, {
-    keyword: 'imagem de são josé',
-    volume: 18.1
-  }, {
-    keyword: 'imagem do sagrado coração de jesus',
-    volume: 12.1
-  }, {
-    keyword: 'loja católica',
-    volume: 5.4
-  }, {
-    keyword: 'loja de artigos religiosos católicos',
-    volume: 2.4
-  }];
-  return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
+  const keywordData = [
+    { keyword: 'imagem da sagrada família', volume: 33.1 },
+    { keyword: 'imagem de são josé', volume: 18.1 },
+    { keyword: 'imagem do sagrado coração de jesus', volume: 12.1 },
+    { keyword: 'loja católica', volume: 5.4 },
+    { keyword: 'loja de artigos religiosos católicos', volume: 2.4 }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -116,7 +110,7 @@ const Index = () => {
           </div>
           
           <Card className="max-w-4xl mx-auto shadow-xl dark:bg-slate-800 dark:border-slate-700">
-            <CardHeader className="text-center bg-gradient-to-r from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20 bg-gray-950">
+            <CardHeader className="text-center bg-gradient-to-r from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20">
               <div className="flex justify-center mb-4">
                 <img src="/lovable-uploads/78dd96d5-e633-48ab-8b67-07ac48d3fd74.png" alt="Divino Amor Logo" className="h-24 w-auto" />
               </div>
@@ -165,32 +159,32 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div className="text-center p-4 rounded-lg bg-gray-900">
+                <div className="text-center p-4 rounded-lg bg-red-50 dark:bg-gray-900">
                   <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">10</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Pontuação de Autoridade</div>
                   <div className="text-xs text-red-500 dark:text-red-400 mt-1">10/100 máximo</div>
                 </div>
                 
-                <div className="text-center p-4 rounded-lg bg-slate-800">
+                <div className="text-center p-4 rounded-lg bg-orange-50 dark:bg-slate-800">
                   <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">3000</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Tráfego Orgânico/Mês</div>
                   <div className="text-xs text-orange-500 dark:text-orange-400 mt-1">Estimado</div>
                 </div>
                 
-                <div className="text-center p-4 rounded-lg bg-slate-900">
+                <div className="text-center p-4 rounded-lg bg-yellow-50 dark:bg-slate-900">
                   <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">4</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Recomendações</div>
                   <div className="text-xs text-yellow-500 dark:text-yellow-400 mt-1">De outros sites</div>
                 </div>
                 
-                <div className="text-center p-4 rounded-lg bg-slate-800">
+                <div className="text-center p-4 rounded-lg bg-blue-50 dark:bg-slate-800">
                   <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2">Divino Amor</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Palavra-chave Principal</div>
                   <Badge variant="outline" className="text-xs mt-1 dark:border-gray-600">Intenção: Informacional</Badge>
                 </div>
               </div>
               
-              <div className="border border-red-200 dark:border-red-800 rounded-lg p-4 bg-red-950">
+              <div className="border border-red-200 dark:border-red-800 rounded-lg p-4 bg-red-50 dark:bg-red-950">
                 <div className="flex items-center gap-2 text-red-700 dark:text-red-400">
                   <AlertTriangle className="w-5 h-5" />
                   <strong>Avaliação:</strong>
@@ -291,8 +285,8 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-xl dark:border-slate-600 bg-slate-900">
-              <CardHeader className="bg-slate-900">
+            <Card className="shadow-xl dark:border-slate-600 bg-white dark:bg-slate-900">
+              <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="flex items-center gap-2 dark:text-white">
                   <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   Análise Pendente
@@ -320,8 +314,8 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl lg:col-span-2 dark:border-slate-600 bg-slate-900">
-              <CardHeader className="bg-slate-900">
+            <Card className="shadow-xl lg:col-span-2 dark:border-slate-600 bg-white dark:bg-slate-900">
+              <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="dark:text-white">Palavras-chave de Oportunidade</CardTitle>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Volume mensal de buscas relevantes | Apenas algumas entre centenas disponíveis
@@ -329,10 +323,12 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  {keywordData.map((item, index) => <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
+                  {keywordData.map((item, index) => (
+                    <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-slate-600 rounded-lg">
                       <span className="text-gray-700 dark:text-gray-200">{item.keyword}</span>
                       <Badge variant="outline" className="dark:border-gray-500">{item.volume} mil buscas/mês</Badge>
-                    </div>)}
+                    </div>
+                  ))}
                 </div>            
                 
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -346,10 +342,10 @@ const Index = () => {
           </div>
 
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
-            <CardHeader className="bg-gray-800">
+            <CardHeader className="bg-gray-50 dark:bg-gray-800">
               <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
             </CardHeader>
-            <CardContent className="bg-slate-800">
+            <CardContent className="bg-white dark:bg-slate-800">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
@@ -377,7 +373,7 @@ const Index = () => {
       </section>
 
       {/* Proposal Section */}
-      <section id="proposta" className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 px-4 sm:px-6 lg:px-8 bg-slate-950">
+      <section id="proposta" className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -387,7 +383,7 @@ const Index = () => {
           </div>
 
           <Card className="shadow-xl mb-8 dark:bg-slate-800 dark:border-slate-700">
-            <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white bg-zinc-100">
+            <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white bg-gray-100 dark:bg-zinc-100">
               <CardTitle>Objetivos & Propostas</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
@@ -538,6 +534,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
