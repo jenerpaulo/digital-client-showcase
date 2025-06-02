@@ -307,15 +307,23 @@ const Index = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Avaliar perfil Google da matriz
+                    Análise detalhada de termos relantes
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Analisar performance das filiais
+                    Análise do Google Profile da matriz
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                    Análise de redes sociais
+                    Análise de performance das filiais
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                    Análise das redes sociais
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                    Análise dos canais de atendimento
                   </li>
                 </ul>
               </CardContent>
