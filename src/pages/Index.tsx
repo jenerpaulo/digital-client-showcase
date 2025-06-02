@@ -414,7 +414,7 @@ const Index = () => {
                 <div className="text-center p-4 rounded-lg bg-violet-900">
                   <TrendingUp className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
                   <h4 className="font-semibold mb-2 text-slate-50">Objetivo 3</h4>
-                  <p className="text-sm text-slate-50">Projetar novas estruturas estratégicas de posicionamento</p>
+                  <p className="text-sm text-slate-50">Criar novos canai de venda e utlizar IA para automatizar processos sem perder a sensibilidade do negócio.</p>
                 </div>
               </div>
             </CardContent>
