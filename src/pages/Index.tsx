@@ -480,7 +480,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <img src="/lovable-uploads/8f98c4bb-4e64-4273-84a4-100ec48a1b18.png" alt="Duobro Tech Logo" className="h-16 w-auto" />
+              <img src="/lovable-uploads/6cdcd176-1ea7-48e4-bb41-0f9acec3fc81.png" alt="Duobro Tech Logo" className="h-16 w-auto" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Sobre a Agência</h2>
             <p className="text-lg text-gray-300">Especialistas em crescimento digital sustentável</p>
