@@ -373,7 +373,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Resumo Inicial</h4>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-base">
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-lg">
                     <li>Caso haja continuidade desta proposta inicial, será necessário realizar um levantamento mais detalhado. 
                       Ainda assim, este diagnóstico preliminar já aponta limitações técnicas no site — desde ajustes simples nas páginas
                       até a necessidade de melhorias mais complexas e uma possível expansão da estrutura, com o objetivo de alcançar resultados mais eficientes. </li>                
