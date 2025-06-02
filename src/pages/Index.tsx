@@ -402,13 +402,13 @@ const Index = () => {
                 <div className="text-center p-4 rounded-lg bg-sky-600">
                   <Target className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
                   <h4 className="font-semibold mb-2 text-slate-50">Objetivo 1</h4>
-                  <p className="text-sm text-slate-50">Levar a Divino Amor ao topo do Google em múltiplos termos</p>
+                  <p className="text-sm text-slate-50">Levar a Divino Amor ao topo do Google em múltiplos termos sem a necessidade de pagar por cliques.</p>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-teal-500">
                   <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
                   <h4 className="font-semibold mb-2 text-slate-50">Objetivo 2</h4>
-                  <p className="text-sm text-slate-50">Melhorar fundamentos técnicos e experiência do usuário</p>
+                  <p className="text-sm text-slate-50">Melhorar fundamentos técnicos e experiência do usuário para atrair novos franqueados e reter clientes.</p>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-violet-900">
