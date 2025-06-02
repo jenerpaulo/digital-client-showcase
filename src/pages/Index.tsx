@@ -398,19 +398,19 @@ const Index = () => {
               </p>
               
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-sky-600">
                   <Target className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Objetivo 1</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300">Levar a Divino Amor ao topo do Google em múltiplos termos</p>
                 </div>
                 
-                <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-teal-500">
                   <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Objetivo 2</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300">Melhorar fundamentos técnicos e experiência do usuário</p>
                 </div>
                 
-                <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                <div className="text-center p-4 rounded-lg bg-violet-900">
                   <TrendingUp className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Objetivo 3</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300">Projetar novas estruturas estratégicas de posicionamento</p>
