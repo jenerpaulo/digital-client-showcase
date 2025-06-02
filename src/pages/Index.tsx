@@ -305,10 +305,6 @@ const Index = () => {
             <p className="text-lg text-gray-600 dark:text-gray-300">Insights estratégicos e oportunidades</p>
           </div>
 
-          <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
-            <CardHeader>
-              <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
-            </CardHeader>   
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
               <CardHeader>
@@ -364,7 +360,13 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
- <CardContent>
+          </div>
+
+          <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
+            <CardHeader>
+              <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
+            </CardHeader>
+            <CardContent>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
@@ -388,8 +390,6 @@ const Index = () => {
               </div>
             </CardContent>
           </Card>
-            
-          </div>
         </div>
       </section>
 
