@@ -463,9 +463,9 @@ const Index = () => {
           </div>
 
           <Card className="shadow-xl bg-gradient-to-r from-orange-500 to-red-500 text-white">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">Chamada de Ação</h3>
-              <p className="text-lg mb-6">Agende sua reunião até 03 de Junho</p>
+            <CardContent className="p-8 text-center bg-yellow-400">
+              <h3 className="text-2xl font-bold mb-4">Sinalize seu Interesse</h3>
+              <p className="text-lg mb-6">Agende sua reunião até 06 de Junho</p>
               <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100" onClick={() => window.open('#', '_blank')}>
                 Escolha uma data aqui
                 <ExternalLink className="w-4 h-4 ml-2" />
