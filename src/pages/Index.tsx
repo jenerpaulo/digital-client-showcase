@@ -365,15 +365,15 @@ const Index = () => {
                   <ul className="space-y-3 text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1">
                     <li>• Domínios distintos (.com / .com.br) tendem a gerar confusão entre os usuários</li>
                     <li>• O site da franquia não está otimizado para ranqueamento no Google</li>
-                    <li>• O site da loja não está preparado para competir com outras lojas nas primeiras posições do Google</li>
+                    <li>• O e-commerce não está apto a competir nas primeiras posições do Google</li>
                     <li>• Há problemas de usabilidade na versão mobile</li>
                     <li>• As unidades filiais não apresentam relevância significativa no ambiente digital</li>
-                    <li>• Os sites não aproveitam o alto volume de buscas por termos relevantes ao negócio</li>
+                    <li>• Os sites não aproveitam o alto volume de buscas por termos relevantes</li>
                   </ul>
                 </div>
                 <div className="flex flex-col">
                   <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Resumo Inicial</h4>
-                  <div className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1 flex items-start">
+                  <div className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed flex-1 flex items-start">
                     <p>Caso haja continuidade desta proposta inicial, será necessário realizar um levantamento mais detalhado. 
                       Ainda assim, este diagnóstico preliminar já aponta limitações técnicas no site — desde ajustes simples nas páginas
                       até a necessidade de melhorias mais complexas e uma possível expansão da estrutura, com o objetivo de alcançar resultados mais eficientes.</p>
