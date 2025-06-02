@@ -388,7 +388,7 @@ const Index = () => {
 
           <Card className="shadow-xl mb-8 dark:bg-slate-800 dark:border-slate-700">
             <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white bg-zinc-100">
-              <CardTitle>Análise e Objetivos</CardTitle>
+              <CardTitle>Objetivos & Propostas</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
               <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
