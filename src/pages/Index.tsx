@@ -195,8 +195,8 @@ const Index = () => {
                   <AlertTriangle className="w-5 h-5" />
                   <strong>Avaliação:</strong>
                 </div>
-                <p className="text-red-600 dark:text-red-400 mt-2">O site da Divino Amor ainda não tem relevância no Google | Os resultados
-                se limitam a buscas relacionadas ao nome da empresa.</p>
+                <p className="text-red-600 dark:text-red-400 mt-2">Atualmente, os resultados de busca estão restritos a pesquisas diretas pelo nome da empresa.
+                  Isso indica que o site da Divino Amor ainda não possui relevância orgânica no Google.</p>
               </div>
             </CardContent>
           </Card>
