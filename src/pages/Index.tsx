@@ -363,7 +363,7 @@ const Index = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li>• Domínios distintos (.com / .com.br) geram confusão entre os usuários</li>
+                    <li>• Domínios distintos (.com / .com.br) tendem a gerar confusão entre os usuários</li>
                     <li>• O site da franquia não está otimizado para ranqueamento no Google</li>
                     <li>• O site da loja não está preparado para competir com outras lojas nas primeiras posições do Google</li>
                     <li>• Há problemas de usabilidade na versão mobile</li>
