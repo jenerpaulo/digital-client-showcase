@@ -207,7 +207,7 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="shadow-xl dark:bg-slate-800 dark:border-slate-700">
+            <Card className="shadow-xl bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle className="text-red-600 dark:text-red-400">Problemas Identificados</CardTitle>
               </CardHeader>
@@ -239,7 +239,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl dark:bg-slate-800 dark:border-slate-700">
+            <Card className="shadow-xl bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700">
               <CardHeader>
                 <CardTitle className="dark:text-white">Score Atual vs. Benchmark</CardTitle>
               </CardHeader>
@@ -285,7 +285,7 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-xl dark:border-slate-600 bg-white dark:bg-slate-900">
+            <Card className="shadow-xl bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600">
               <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="flex items-center gap-2 dark:text-white">
                   <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
@@ -314,7 +314,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl lg:col-span-2 dark:border-slate-600 bg-white dark:bg-slate-900">
+            <Card className="shadow-xl lg:col-span-2 bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600">
               <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="dark:text-white">Palavras-chave de Oportunidade</CardTitle>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -341,7 +341,7 @@ const Index = () => {
             </Card>
           </div>
 
-          <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
+          <Card className="shadow-xl bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-600">
             <CardHeader className="bg-gray-50 dark:bg-gray-800">
               <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
             </CardHeader>
