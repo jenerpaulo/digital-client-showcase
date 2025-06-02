@@ -359,10 +359,10 @@ const Index = () => {
               <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
             </CardHeader>
             <CardContent className="bg-white dark:bg-slate-800">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Problemas Identificados</h4>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex flex-col">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Problemas Identificados</h4>
+                  <ul className="space-y-3 text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1">
                     <li>• Domínios distintos (.com / .com.br) tendem a gerar confusão entre os usuários</li>
                     <li>• O site da franquia não está otimizado para ranqueamento no Google</li>
                     <li>• O site da loja não está preparado para competir com outras lojas nas primeiras posições do Google</li>
@@ -371,13 +371,13 @@ const Index = () => {
                     <li>• Os sites não aproveitam o alto volume de buscas por termos relevantes ao negócio</li>
                   </ul>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Resumo Inicial</h4>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-lg">
-                    <li>Caso haja continuidade desta proposta inicial, será necessário realizar um levantamento mais detalhado. 
+                <div className="flex flex-col">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Resumo Inicial</h4>
+                  <div className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1 flex items-start">
+                    <p>Caso haja continuidade desta proposta inicial, será necessário realizar um levantamento mais detalhado. 
                       Ainda assim, este diagnóstico preliminar já aponta limitações técnicas no site — desde ajustes simples nas páginas
-                      até a necessidade de melhorias mais complexas e uma possível expansão da estrutura, com o objetivo de alcançar resultados mais eficientes. </li>                
-                  </ul>
+                      até a necessidade de melhorias mais complexas e uma possível expansão da estrutura, com o objetivo de alcançar resultados mais eficientes.</p>
+                  </div>
                 </div>
               </div>
             </CardContent>
