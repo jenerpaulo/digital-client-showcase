@@ -292,7 +292,7 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-xl bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600 order-last lg:order-first">
+            <Card className="shadow-xl bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600 order-2 lg:order-first">
               <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="flex items-center gap-2 dark:text-white">
                   <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
@@ -329,7 +329,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-xl lg:col-span-2 bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600 order-first lg:order-last">
+            <Card className="shadow-xl lg:col-span-2 bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600 order-1 lg:order-last">
               <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="dark:text-white">Palavras-chave de Oportunidade</CardTitle>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
