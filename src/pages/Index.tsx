@@ -225,7 +225,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Análise Técnica
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Diagnóstico dos problemas técnicos</p>
+            <p className="text-2xl text-gray-600 dark:text-cyan-600">Diagnóstico de problemas técnicos</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -303,7 +303,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Análise Humana
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Insights estratégicos e oportunidades</p>
+            <p className="text-2xl text-gray-600 dark:text-cyan-700">Insights estratégicos e oportunidades</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
