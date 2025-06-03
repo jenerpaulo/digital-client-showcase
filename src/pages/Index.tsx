@@ -431,12 +431,12 @@ const Index = () => {
                 <CardTitle className="text-blue-800 dark:text-blue-300">Opção 1: Consultoria</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
                   A Duobro realiza um diagnóstico técnico e desenvolve uma estrutura digital estratégica 
                   para que a Divino Amor cresça no ambiente digital no médio e longo prazo, sem depender 
                   de anúncios pagos.
                 </p>
-                <Badge variant="outline" className="text-blue-600 dark:text-blue-400 dark:border-blue-600">Estratégico</Badge>
+                <Badge variant="outline" className="text-blue-600 dark:text-blue-400 dark:border-blue-600 text-base">Estratégico</Badge>
               </CardContent>
             </Card>
 
@@ -445,12 +445,12 @@ const Index = () => {
                 <CardTitle className="text-green-800 dark:text-green-300">Opção 2: Consultoria + Execução</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
                   A Duobro executa todo o plano desenvolvido e oferece suporte durante todo o processo. 
                   Nosso modelo de trabalho é baseado em automação, desenvolvimento personalizado e 
                   relatórios de desempenho que realmente importam.
                 </p>
-                <Badge variant="outline" className="text-green-600 dark:text-green-400 dark:border-green-600">Completo</Badge>
+                <Badge variant="outline" className="text-green-600 dark:text-green-400 dark:border-green-600 text-base">Completo</Badge>
               </CardContent>
             </Card>
 
@@ -459,11 +459,11 @@ const Index = () => {
                 <CardTitle className="text-purple-800 dark:text-purple-300">Opção 3: Consultoria + Execução + Católicos Online</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
                   Neste modelo, incluiremos uma proposta diferenciada para que a Divino Amor esteja 
                   presente em nossa nova rede, a Católicos Online.
                 </p>
-                <Badge variant="outline" className="text-purple-600 dark:text-purple-400 dark:border-purple-600">Premium</Badge>
+                <Badge variant="outline" className="text-purple-600 dark:text-purple-400 dark:border-purple-600 text-base">Premium</Badge>
               </CardContent>
             </Card>
           </div>
