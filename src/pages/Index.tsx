@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Menu, X } from 'lucide-react';
 import { ThemeToggle } from "@/components/theme-toggle";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -393,10 +394,10 @@ const Index = () => {
 
           <Card className="shadow-xl mb-8 dark:bg-slate-800 dark:border-slate-700">
             <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white bg-gray-100 dark:bg-zinc-100">
-              <CardTitle>Objetivos & Propostas</CardTitle>
+              <CardTitle className="text-xl">Objetivos & Propostas</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
-              <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed text-lg">
                 A Divino Amor se destaca como franquia pelo trabalho realizado e pelo crescimento expressivo. 
                 Nota-se dedicação à operação física da marca, restando agora um esforço equivalente no ambiente 
                 digital, que parece estar em fase inicial.
@@ -405,20 +406,20 @@ const Index = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center p-4 rounded-lg bg-sky-600">
                   <Target className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
-                  <h4 className="font-semibold mb-2 text-slate-50">Objetivo 1</h4>
-                  <p className="text-sm text-slate-50">Levar a Divino Amor ao topo do Google em múltiplos termos sem a necessidade de pagar por cliques.</p>
+                  <h4 className="font-semibold mb-2 text-slate-50 text-lg">Objetivo 1</h4>
+                  <p className="text-slate-50 text-base">Levar a Divino Amor ao topo do Google em múltiplos termos sem a necessidade de pagar por cliques.</p>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-teal-500">
                   <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-                  <h4 className="font-semibold mb-2 text-slate-50">Objetivo 2</h4>
-                  <p className="text-sm text-slate-50">Melhorar fundamentos técnicos e experiência do usuário para atrair novos franqueados e reter clientes.</p>
+                  <h4 className="font-semibold mb-2 text-slate-50 text-lg">Objetivo 2</h4>
+                  <p className="text-slate-50 text-base">Melhorar fundamentos técnicos e experiência do usuário para atrair novos franqueados e reter clientes.</p>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-violet-900">
                   <TrendingUp className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
-                  <h4 className="font-semibold mb-2 text-slate-50">Objetivo 3</h4>
-                  <p className="text-sm text-slate-50">Criar novos canais de vendas e utlizar IA para automatizar processos sem perder a sensibilidade do negócio.</p>
+                  <h4 className="font-semibold mb-2 text-slate-50 text-lg">Objetivo 3</h4>
+                  <p className="text-slate-50 text-base">Criar novos canais de vendas e utlizar IA para automatizar processos sem perder a sensibilidade do negócio.</p>
                 </div>
               </div>
             </CardContent>
@@ -549,4 +550,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
