@@ -150,10 +150,8 @@ const Index = () => {
       <section id="google-performance" className="py-16 bg-slate-200 dark:bg-slate-800 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Desempenho no Google
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Análise de Relevância</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Análise de Autoridade</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">Google Performance</p>
           </div>
 
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
@@ -195,8 +193,7 @@ const Index = () => {
                   <AlertTriangle className="w-5 h-5" />
                   <strong>Avaliação:</strong>
                 </div>
-                <p className="text-red-600 dark:text-red-400 mt-2">Atualmente, os resultados de busca estão restritos a pesquisas diretas pelo nome da empresa.
-                  Isso indica que o site da Divino Amor ainda não possui relevância orgânica no Google.</p>
+                <p className="text-red-600 dark:text-red-400 mt-2 font-normal">Atualmente, os resultados de busca estão restritos a pesquisas diretas pelo nome da empresa. Isso indica que o site da Divino Amor ainda não possui autoridade digital.</p>
               </div>
             </CardContent>
           </Card>
