@@ -169,7 +169,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Análise de Autoridade</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Google Performance</p>
+            <p className="text-3xl text-gray-600 dark:text-cyan-500">Google Performance</p>
           </div>
 
           <Card className="shadow-xl dark:bg-slate-700 dark:border-slate-600">
