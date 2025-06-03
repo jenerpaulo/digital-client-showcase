@@ -7,11 +7,9 @@ import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Me
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'google-performance', 'analise-tecnica', 'analise-humana', 'resultados', 'proposta', 'agencia'];
@@ -30,7 +28,6 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -40,7 +37,6 @@ const Index = () => {
     }
     setIsMobileMenuOpen(false); // Close mobile menu after navigation
   };
-
   const menuItems = [{
     id: 'home',
     label: 'Home'
@@ -63,7 +59,6 @@ const Index = () => {
     id: 'agencia',
     label: 'Agência'
   }];
-
   const keywordData = [{
     keyword: 'imagem da sagrada família',
     volume: 33.1
@@ -80,7 +75,6 @@ const Index = () => {
     keyword: 'loja de artigos religiosos católicos',
     volume: 2.4
   }];
-
   const rankingData = [{
     month: 'Abril',
     position: 41
@@ -88,14 +82,12 @@ const Index = () => {
     month: 'Maio',
     position: 7
   }];
-
   const chartConfig = {
     position: {
       label: "Posição",
       color: "hsl(var(--chart-1))"
     }
   };
-
   return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
@@ -411,7 +403,7 @@ const Index = () => {
       <section id="resultados" className="py-16 bg-slate-200 dark:bg-slate-800 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Nossa Preferência por Projetos Católicos</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Case de Sucesso</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
               A <a href="https://clinicaimplamed.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Clínica Implamed</a>, cliente da Duobro, alcançou a primeira página do Google em apenas 2 meses para seu principal termo relacionado a implantes dentários — saltando da 41ª para a 7ª posição. Agora, está a poucos passos do topo.
             </p>
@@ -630,5 +622,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
