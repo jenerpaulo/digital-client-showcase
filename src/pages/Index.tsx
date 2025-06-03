@@ -5,13 +5,15 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Menu, X } from 'lucide-react';
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'google-performance', 'analise-tecnica', 'analise-humana', 'proposta', 'agencia'];
+      const sections = ['home', 'google-performance', 'analise-tecnica', 'analise-humana', 'proposta', 'resultados', 'agencia'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -52,6 +54,9 @@ const Index = () => {
     id: 'proposta',
     label: 'Proposta'
   }, {
+    id: 'resultados',
+    label: 'Resultados'
+  }, {
     id: 'agencia',
     label: 'Agência'
   }];
@@ -71,6 +76,18 @@ const Index = () => {
     keyword: 'loja de artigos religiosos católicos',
     volume: 2.4
   }];
+  const rankingData = [
+    { month: 'Abril', position: 41 },
+    { month: 'Maio', position: 7 }
+  ];
+
+  const chartConfig = {
+    position: {
+      label: "Posição",
+      color: "hsl(var(--chart-1))",
+    },
+  };
+
   return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
@@ -476,6 +493,65 @@ const Index = () => {
                 Escolha uma data aqui
                 <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section id="resultados" className="py-16 bg-slate-200 dark:bg-slate-800 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Nossa Preferência por Projetos Católicos
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              A Clínica Implamed, cliente da Duobro, alcançou a primeira página do Google em apenas 2 meses para seu principal termo relacionado a implantes dentários — saltando da 41ª para a 7ª posição. Agora, está a poucos passos do topo.
+            </p>
+          </div>
+
+          <Card className="shadow-xl max-w-4xl mx-auto dark:bg-slate-700 dark:border-slate-600">
+            <CardHeader>
+              <CardTitle className="text-center dark:text-white">Posicionamento no Google</CardTitle>
+              <p className="text-center text-gray-600 dark:text-gray-300">Evolução da posição nos resultados de busca</p>
+            </CardHeader>
+            <CardContent className="p-8">
+              <ChartContainer config={chartConfig} className="h-80 w-full">
+                <LineChart data={rankingData}>
+                  <XAxis dataKey="month" />
+                  <YAxis 
+                    domain={[1, 50]} 
+                    reversed={true}
+                    label={{ value: 'Posição no Google', angle: -90, position: 'insideLeft' }}
+                  />
+                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <Line 
+                    type="monotone" 
+                    dataKey="position" 
+                    stroke="#3b82f6" 
+                    strokeWidth={4}
+                    dot={{ fill: '#3b82f6', strokeWidth: 2, r: 8 }}
+                  />
+                </LineChart>
+              </ChartContainer>
+              
+              <div className="mt-6 grid md:grid-cols-2 gap-6">
+                <div className="text-center p-4 rounded-lg bg-red-50 dark:bg-red-900/20">
+                  <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">41ª</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">Posição Inicial (Abril)</div>
+                </div>
+                
+                <div className="text-center p-4 rounded-lg bg-green-50 dark:bg-green-900/20">
+                  <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">7ª</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">Posição Atual (Maio)</div>
+                </div>
+              </div>
+              
+              <div className="mt-6 p-4 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
+                <p className="text-blue-700 dark:text-blue-400 text-center">
+                  <strong>Resultado:</strong> Melhoria de 34 posições em apenas 2 meses
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
