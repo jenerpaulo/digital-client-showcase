@@ -360,7 +360,7 @@ const Index = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col">
                   <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Problemas Identificados</h4>
-                  <ul className="space-y-3 text-gray-600 dark:text-gray-300 text-sm leading-relaxed flex-1">
+                  <ul className="space-y-3 text-gray-600 dark:text-gray-300 text-base leading-relaxed flex-1">
                     <li>• Domínios distintos (.com / .com.br) tendem a gerar confusão entre os usuários</li>
                     <li>• O site da franquia não está otimizado para ranqueamento no Google</li>
                     <li>• O e-commerce não está apto a competir nas primeiras posições do Google</li>
