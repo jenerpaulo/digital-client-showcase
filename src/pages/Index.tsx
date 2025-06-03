@@ -372,7 +372,7 @@ const Index = () => {
                 <div className="flex flex-col">
                   <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Feedback da Análise Inicial</h4>
                   <div className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed flex-1 flex items-start">
-                    <p>É necessário um levantamento mais aprofundado, não apenas para obter um diagnóstico completo, mas também para revelar o grande potencial que aguarda a Divino Amor no ambiente digital. Há oportunidades claras de melhoria — desde ajustes simples nas páginas até ações mais complexas e a possível expansão da estrutura do site. No entanto, considerando a sólida experiência da Divino Amor no atendimento presencial, temos plena confiança de que sua presença digital pode alcançar novos patamares com o apoio do time certo</p>
+                    <p>É necessário um levantamento mais aprofundado, não apenas para obter um diagnóstico completo, mas também para revelar o grande potencial que aguarda a Divino Amor no ambiente digital. Há oportunidades claras de melhoria — desde ajustes simples nas páginas até ações mais complexas e a possível expansão da estrutura do site. No entanto, considerando a sólida experiência da Divino Amor no âmbito presencial, temos plena confiança de que sua presença digital pode alcançar novos patamares com o apoio do time certo</p>
                   </div>
                 </div>
               </div>
