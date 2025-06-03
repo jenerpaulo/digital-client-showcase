@@ -7,7 +7,6 @@ import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Me
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -184,26 +183,26 @@ const Index = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div className="text-center p-4 rounded-lg bg-red-50 dark:bg-gray-900">
                   <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">10</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Pontuação de Autoridade</div>
-                  <div className="text-xs text-red-500 dark:text-red-400 mt-1">10/100 máximo</div>
+                  <div className="text-base text-gray-600 dark:text-gray-700">Pontuação de Autoridade</div>
+                  <div className="text-base text-red-500 dark:text-red-500 mt-1">10/100 máximo</div>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-orange-50 dark:bg-slate-800">
                   <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">3000</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Tráfego Orgânico/Mês</div>
-                  <div className="text-xs text-orange-500 dark:text-orange-400 mt-1">Estimado</div>
+                  <div className="text-base text-gray-600 dark:text-gray-700">Tráfego Orgânico/Mês</div>
+                  <div className="text-base text-orange-500 dark:text-orange-500 mt-1">Estimado</div>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-yellow-50 dark:bg-slate-900">
                   <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">4</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Recomendações</div>
-                  <div className="text-xs text-yellow-500 dark:text-yellow-400 mt-1">De outros sites</div>
+                  <div className="text-base text-gray-600 dark:text-gray-800">Recomendações</div>
+                  <div className="text-base text-yellow-500 dark:text-yellow-700 mt-1">De outros sites</div>
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-blue-50 dark:bg-slate-800">
-                  <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2">Divino Amor</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Palavra-chave Principal</div>
-                  <Badge variant="outline" className="text-xs mt-1 dark:border-gray-600">Intenção: Informacional</Badge>
+                  <div className="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Divino Amor</div>
+                  <div className="text-base text-gray-600 dark:text-gray-600">Palavra-chave Principal</div>
+                  <Badge variant="outline" className="text-base mt-1 dark:border-gray-400">Intenção: Informacional</Badge>
                 </div>
               </div>
               
@@ -270,7 +269,7 @@ const Index = () => {
                 <div className="space-y-6">
                   <div>
                     <div className="flex justify-between mb-2">
-                      <span className="text-sm font-medium dark:text-gray-300">Score Atual</span>
+                      <span className="text-sm font-medium dark:text-gray-300">Score Atual Divino Amor</span>
                       <span className="text-sm text-orange-600 dark:text-orange-400">79%</span>
                     </div>
                     <Progress value={79} className="h-3" />
@@ -623,5 +622,4 @@ const Index = () => {
       </section>
     </div>;
 };
-
 export default Index;
