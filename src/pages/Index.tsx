@@ -7,6 +7,7 @@ import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Me
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -400,7 +401,7 @@ const Index = () => {
       </section>
 
       {/* Results Section - Moved above Proposal */}
-      <section id="resultados" className="py-16 bg-slate-200 dark:bg-slate-800 px-4 sm:px-6 lg:px-8">
+      <section id="resultados" className="py-16 bg-slate-100 dark:bg-slate-800 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Case de Sucesso</h2>
@@ -622,4 +623,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
