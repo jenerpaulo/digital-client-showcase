@@ -5,9 +5,11 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Menu, X } from 'lucide-react';
 import { ThemeToggle } from "@/components/theme-toggle";
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'google-performance', 'analise-tecnica', 'analise-humana', 'proposta', 'agencia'];
@@ -26,6 +28,7 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -35,6 +38,7 @@ const Index = () => {
     }
     setIsMobileMenuOpen(false); // Close mobile menu after navigation
   };
+
   const menuItems = [{
     id: 'home',
     label: 'Home'
@@ -54,6 +58,7 @@ const Index = () => {
     id: 'agencia',
     label: 'Agência'
   }];
+
   const keywordData = [{
     keyword: 'imagem da sagrada família',
     volume: 33.1
@@ -70,6 +75,7 @@ const Index = () => {
     keyword: 'loja de artigos religiosos católicos',
     volume: 2.4
   }];
+
   return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
@@ -292,7 +298,7 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="shadow-xl bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600 order-2 lg:order-first">
+            <Card className="shadow-xl bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-600 order-3 lg:order-first">
               <CardHeader className="bg-gray-50 dark:bg-slate-900">
                 <CardTitle className="flex items-center gap-2 dark:text-white">
                   <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
@@ -553,4 +559,5 @@ const Index = () => {
       </section>
     </div>;
 };
+
 export default Index;
