@@ -128,9 +128,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Performance Digital
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Análise de Performance & Proposta de Escalada Digital
-            </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">Análise de Performance & Proposta Estratégica</p>
           </div>
           
           <Card className="max-w-4xl mx-auto shadow-xl dark:bg-slate-800 dark:border-slate-700">
