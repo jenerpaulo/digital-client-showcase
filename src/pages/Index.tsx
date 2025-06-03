@@ -405,7 +405,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Case de Sucesso</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              A <a href="https://clinicaimplamed.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Clínica Implamed</a>, cliente da Duobro, alcançou a primeira página do Google em apenas 2 meses para seu principal termo relacionado a implantes dentários — saltando da 41ª para a 7ª posição. Agora, está a poucos passos do topo.
+              A <a href="https://clinicaimplamed.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Clínica Implamed</a>, cliente Duobro, alcançou a primeira página do Google em apenas 2 meses para seu principal termo relacionado a implantes dentários — saltando da 41ª para a 7ª posição. Agora, está a poucos passos do topo.
             </p>
           </div>
 
