@@ -531,7 +531,7 @@ const Index = () => {
               <CardContent className="p-6">
                 <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
                   Neste modelo, incluiremos uma proposta diferenciada para que a Divino Amor esteja 
-                  presente em nossa nova rede, a Católicos Online. Veja exemplo da página <a href="https://www.exemplo.com" target="_blank">aqui.</a>
+                  presente em nossa nova rede, a Católicos Online. Veja exemplo da página <a href="https://catolicos.online/pages/DivinoAmor/products" target="_blank" style="color: blue;">aqui.</a>
 
                 </p>
                 <Badge variant="outline" className="text-purple-600 dark:text-purple-400 dark:border-purple-600 text-base">Premium</Badge>
