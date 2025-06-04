@@ -200,7 +200,7 @@ const Index = () => {
                 <div className="text-center p-4 rounded-lg bg-blue-50 dark:bg-slate-800">
                   <div className="text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Divino Amor</div>
                   <div className="text-base text-gray-600 dark:text-gray-300">Palavra-chave Principal</div>
-                  <Badge variant="outline" className="text-base mt-1 dark:border-gray-400">Intenção: Informacional</Badge>
+                  <Badge variant="outline" className="text-base mt- dark:border-gray-500">Intenção: Informacional</Badge>
                 </div>
               </div>
               
