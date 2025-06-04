@@ -7,6 +7,7 @@ import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Me
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -532,7 +533,7 @@ const Index = () => {
                 <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
                   Neste modelo, incluiremos uma proposta diferenciada para que a Divino Amor esteja 
                   presente em nossa nova rede, a Católicos Online. Veja exemplo da página 
-                  <a href="https://catolicos.online/pages/DivinoAmor/products" target="_blank" style="color: blue;">aqui.</a>
+                  <a href="https://catolicos.online/pages/DivinoAmor/products" target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">aqui.</a>
                 </p>
                 <Badge variant="outline" className="text-purple-600 dark:text-purple-400 dark:border-purple-600 text-base">Premium</Badge>
               </CardContent>
