@@ -261,7 +261,7 @@ const Index = () => {
 
             <Card className="shadow-xl bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700">
               <CardHeader>
-                <CardTitle className="dark:text-white">Score Atual vs. Benchmark</CardTitle>
+                <CardTitle className="dark:text-white">Score Atual vs. Score Ideal</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">
@@ -559,7 +559,7 @@ const Index = () => {
               <img src="/lovable-uploads/6cdcd176-1ea7-48e4-bb41-0f9acec3fc81.png" alt="Duobro Tech Logo" className="h-16 w-auto" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Sobre a Agência</h2>
-            <p className="text-lg text-gray-300">Especialistas em crescimento digital sustentável</p>
+            <p className="text-lg text-gray-300">Especialistas em Posicionamento Digital</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
