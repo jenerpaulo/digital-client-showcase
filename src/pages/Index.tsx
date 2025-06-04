@@ -597,7 +597,7 @@ const Index = () => {
               <h4 className="text-xl font-bold mb-4">Nossa Experiência</h4>
               <div className="space-y-4">
                 <div className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                  <div className="text-2xl font-bold">6 anos</div>
+                  <div className="text-2xl font-bold">7 anos</div>
                   <div className="text-sm">Experiência em startup</div>
                 </div>
                 <div className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
