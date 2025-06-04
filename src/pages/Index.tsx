@@ -7,7 +7,6 @@ import { ExternalLink, TrendingUp, AlertTriangle, Users, Target, CheckCircle, Me
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -371,12 +370,12 @@ const Index = () => {
 
           <Card className="shadow-xl bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-600">
             <CardHeader className="bg-gray-50 dark:bg-gray-800">
-              <CardTitle className="dark:text-white">Primeiras Impressões</CardTitle>
+              <CardTitle className="dark:text-white text-4xl">Primeiras Impressões</CardTitle>
             </CardHeader>
             <CardContent className="bg-white dark:bg-slate-800">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="flex flex-col">
-                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Problemas Identificados</h4>
+                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Problemas Identificados</h4>
                   <ul className="space-y-3 text-gray-600 dark:text-gray-300 text-base leading-relaxed flex-1">
                     <li>• Domínios distintos (.com / .com.br) tendem a gerar confusão entre os usuários</li>
                     <li>• O site da franquia não está otimizado para ranqueamento no Google</li>
@@ -387,7 +386,7 @@ const Index = () => {
                   </ul>
                 </div>
                 <div className="flex flex-col">
-                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Feedback da Análise Inicial</h4>
+                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Feedback da Análise Inicial</h4>
                   <div className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed flex-1 flex items-start">
                     <p>É necessário um levantamento mais aprofundado, não apenas para obter um diagnóstico completo, mas também para revelar o grande potencial que aguarda a Divino Amor no ambiente digital. Há oportunidades claras de melhoria — desde ajustes simples nas páginas até ações mais complexas e a possível expansão da estrutura do site. No entanto, considerando a sólida experiência da Divino Amor no âmbito presencial, temos plena confiança de que sua presença digital pode alcançar novos patamares com o apoio do time certo</p>
                   </div>
