@@ -81,7 +81,7 @@ const Index = () => {
     position: 41
   }, {
     month: 'Maio',
-    position: 7
+    position: 4
   }];
   const chartConfig = {
     position: {
@@ -404,7 +404,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Case de Sucesso</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              A <a href="https://clinicaimplamed.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Clínica Implamed</a>, cliente Duobro, alcançou a primeira página do Google em apenas 2 meses para seu principal termo relacionado a implantes dentários — saltando da 41ª para a 7ª posição. Agora, está a poucos passos do topo.
+              A <a href="https://clinicaimplamed.com.br/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Clínica Implamed</a>, cliente Duobro, alcançou a primeira página do Google em apenas 2 meses para seu principal termo relacionado a implantes dentários — saltando da 41ª para a 4ª posição. Agora, está a poucos passos do topo.
             </p>
           </div>
 
@@ -543,7 +543,7 @@ const Index = () => {
           <Card className="shadow-xl bg-gradient-to-r from-orange-500 to-red-500 text-white">
             <CardContent className="p-8 text-center bg-yellow-400">
               <h3 className="text-2xl font-bold mb-4">Sinalize seu Interesse</h3>
-              <p className="text-lg mb-6 text-slate-700">Agende sua reunião até 06 de Junho</p>
+              <p className="text-lg mb-6 text-slate-700">Agende sua reunião até 12 de Junho</p>
               <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100" onClick={() => window.open('https://cal.duobro.com.br/joneslauriano/divino', '_blank')}>
                 Escolha uma data aqui
                 <ExternalLink className="w-4 h-4 ml-2" />
