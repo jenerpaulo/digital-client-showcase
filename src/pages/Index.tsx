@@ -438,14 +438,14 @@ const Index = () => {
                 </div>
                 
                 <div className="text-center p-4 rounded-lg bg-green-50 dark:bg-green-900/20">
-                  <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">7ª</div>
+                  <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">4ª</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Posição Atual (Maio)</div>
                 </div>
               </div>
               
               <div className="mt-6 p-4 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
                 <p className="text-blue-700 dark:text-blue-400 text-center">
-                  <strong>Resultado:</strong> Melhoria de 34 posições em apenas 2 meses
+                  <strong>Resultado:</strong> Melhoria de 37 posições em apenas 2 meses
                 </p>
               </div>
             </CardContent>
